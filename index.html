@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <style>
+      body > .bg {
+        width: 100%;
+        height: 100%;
+        background-color: cyan;
+        position: absolute;
+        clip-path: polygon(28% 0, 100% 0, 0 100%, 0 29%);
+        z-index: -1;
+      }
+      #todo {
+        position: fixed;
+        top: 10%;
+        left: 20%;
+      }
+      ul > li {
+        list-style: none;
+        font-size: 2em;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div id="todo">
+        <h1>To Do List</h1>
+        <ul>
+          <li>'new' - Adds a ToDo task</li>
+          <li>'list' - Lists all ToDos</li>
+          <li>'delete' - Removes specific elements</li>
+          <li>'quit' - Quits app(or q)</li>
+          <li>'completed'- Adds a completed ToDo</li>
+          <li>'show' - show completed tasks</li>
+        </ul>
+      </div>
+    </div>
+    <script src="toDo.js"></script>
+  </body>
+</html>
