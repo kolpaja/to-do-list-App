@@ -15,7 +15,7 @@
         z-index: -1;
       }
       #todo {
-        position: fixed;
+        position: absolute;
         top: 12%;
         left: 19%;
         z-index: 1;
@@ -28,18 +28,17 @@
     </style>
   </head>
   <body>
-    <div class="bg">
-      <div id="todo">
-        <h1>To Do List</h1>
-        <ul>
-          <li>'new' - Adds a ToDo task</li>
-          <li>'list' - Lists all ToDos</li>
-          <li>'delete' - Removes specific elements</li>
-          <li>'quit' - Quits app(or q)</li>
-          <li>'completed'- Adds a completed ToDo</li>
-          <li>'show' - show completed tasks</li>
-        </ul>
-      </div>
+    <div class="bg"></div>
+    <div id="todo">
+      <h1>To Do List</h1>
+      <ul>
+        <li>'new' - Adds a ToDo task</li>
+        <li>'list' - Lists all ToDos</li>
+        <li>'delete' - Removes specific elements</li>
+        <li>'quit' - Quits app(or q)</li>
+        <li>'completed'- Adds a completed ToDo</li>
+        <li>'show' - show completed tasks</li>
+      </ul>
     </div>
     <script src="toDo.js"></script>
   </body>

@@ -11,7 +11,7 @@
 //   console.log(toDo);
 // }
 
-let input = prompt("what do you want to do?");
+let input = prompt("what do you want to do?(q for exit)");
 const toDos = ["study to code", "learning js"];
 const completed = [];
 while (input !== "q" && input !== "quit") {
